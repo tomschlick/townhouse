@@ -4,7 +4,7 @@
     "keywords": [
         "laravel",
         "multi-tenant",
-        "multi-database",
+        "multi-database"
     ],
     "homepage": "https://multitenantlaravel.com",
     "license": "MIT",
