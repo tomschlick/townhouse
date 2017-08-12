@@ -16,8 +16,7 @@ composer require tomschlick/townhouse
 ## Usage
 
 ``` php
-$skeleton = new Spatie\Skeleton();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+//
 ```
 
 ## Testing
