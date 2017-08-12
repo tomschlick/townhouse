@@ -13,7 +13,7 @@ abstract class BaseTenantableCommand extends Command
      */
     final public function handle()
     {
-        if ( ! $this->confirmToProceed()) {
+        if (! $this->confirmToProceed()) {
             return;
         }
 
