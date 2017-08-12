@@ -19,6 +19,7 @@
         "php" : "^7.1",
         "illuminate/console" : "~5.4",
         "illuminate/contracts" : "~5.4",
+        "illuminate/database" : "~5.4",
         "illuminate/events" : "~5.4",
         "illuminate/support" : "~5.4",
         "illuminate/notifications" : "~5.4"
