@@ -4,6 +4,7 @@ namespace TomSchlick\Townhouse;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
+use Symfony\Component\Console\Input\InputOption;
 
 abstract class BaseTenantableCommand extends Command
 {
@@ -12,7 +13,7 @@ abstract class BaseTenantableCommand extends Command
      */
     final public function handle()
     {
-        if (! $this->confirmToProceed()) {
+        if ( ! $this->confirmToProceed()) {
             return;
         }
 
@@ -24,7 +25,7 @@ abstract class BaseTenantableCommand extends Command
 
             $this->handleTenant($tenant);
 
-            $this->info("\nFinished for tenant: ".$tenant->id);
+            $this->info("\nFinished for tenant: " . $tenant->id);
         }
     }
 
@@ -100,7 +101,7 @@ abstract class BaseTenantableCommand extends Command
     protected function bootstrapTenant(Tenant $tenant)
     {
         if ($this->checkTenantDatabaseExists && ! $tenant->databaseExists()) {
-            $this->error('Tenant '.$tenant->id.' does not have a database setup.');
+            $this->error('Tenant ' . $tenant->id . ' does not have a database setup.');
         }
 
         if ($tenant->databaseExists()) {
