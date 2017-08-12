@@ -2,8 +2,8 @@
 
 namespace TomSchlick\Townhouse\Tenant;
 
-use Illuminate\Support\Facades\DB;
 use TomSchlick\Townhouse\Tenant;
+use Illuminate\Support\Facades\DB;
 
 class Database
 {
@@ -64,7 +64,7 @@ class Database
     }
 
     /**
-     * Check if database currently exists in MySQL
+     * Check if database currently exists in MySQL.
      *
      * @return bool
      */
