@@ -13,7 +13,7 @@ class TownhouseServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/townhouse.php' => config_path('townhouse.php'),
+                __DIR__.'/../config/config.php' => config_path('townhouse.php'),
             ], 'config');
 
             /*
